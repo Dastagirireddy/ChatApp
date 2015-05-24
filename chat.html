@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chat Tutorial | Home page</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="chat.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Welcome to Chat tutorial</h1>
+		<div class="row">
+			<div class="form-group col-md-4">
+				<label for="exampleInputName2">Name</label>
+				<input type="text" class="form-control" id="username" placeholder="Enter your name">
+			</div>		
+		</div>
+		<div class="form-group">
+			<button type="button" class="btn btn-success" id="submitUser">Submit</button>
+		</div>
+	</div>
+	<div class="chatbox" id="chatbox">
+		<div class="chatbox-header">
+			<span id="chat-username"></span>
+			<span class="close" id="close">
+				<span class="glyphicon glyphicon-chevron-up toggle-chat" aria-hidden="true"></span>
+			</span>
+		</div>
+		<div class="chatbox-content" id="chatbox-content">
+			<div class="chatbox-body" id="storeData">
+				
+			</div>
+			<div class="chatbox-footer">
+				<input class="textarea" type="text" id="chatData" />
+			</div>
+		</div>
+	</div>
+	<div class="online-users" id="usersOnline">
+		 
+	</div>
+</body>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="http://localhost:3000/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="chat.js"></script>
+</html>
